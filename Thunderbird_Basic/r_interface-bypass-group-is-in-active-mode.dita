@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_v75_fa8_kw"> 
+<title>Interface bypass group is in active mode</title>
+<shortdesc>This alarm is cleared when the bypass group table operational
+status sets to active (value=1).</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>interface drops<indexterm>active mode</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<refbody>
+    <section id="i3199155" ><table frame="none" colsep="0" rowsep="0" >
+<tgroup cols="2" colsep="0" rowsep="0" outputclass="Table" >
+<colspec colnum="1" colname="1" colwidth="24*" colsep="0" />
+<colspec colnum="2" colname="2" colwidth="76*" colsep="0" />
+<tbody>
+<row rowsep="0" >
+<entry colname="1" >Profile</entry>
+<entry colname="2" >Description</entry>
+</row>
+<row rowsep="0" >
+<entry colname="1" ><p>Frequency</p></entry>
+<entry colname="2" ><p>0 seconds (Immediate)</p></entry>
+</row>
+<row rowsep="0" >
+<entry colname="1" ><p>Severity</p></entry>
+<entry colname="2" ><p>Cleared</p></entry>
+</row>
+<row rowsep="0" >
+<entry colname="1" ><p>Condition</p></entry>
+<entry colname="2" ><p>ALPHABET-MIB::svBypassGroupGroupTableOperStatus == 1
+                                    (eBypassWatchdogOperStatus_BYPASS_OPER_STATUS_ACTIVE)</p></entry>
+</row>
+</tbody>
+</tgroup></table></section></refbody></reference>
