@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faq PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"  "faq.dtd">
+<faq id="faq-test">
+<question>How do I view a hierarchical diagram?</question>
+ <answer>
+  <p>By default, when you install <keyword keyref="hawkvision-product"/>, the indented diagram view
+      is selected. You need to select the hierarchical diagram view.</p>
+  <p>To ensure that the DITA map is displayed as a hierarchical diagram, click <menucascade>
+    <uicontrol>View</uicontrol>
+    <uicontrol>View As</uicontrol>
+    <uicontrol>Hierarchical Diagram.</uicontrol>
+   </menucascade>.</p>
+ </answer>
+</faq>

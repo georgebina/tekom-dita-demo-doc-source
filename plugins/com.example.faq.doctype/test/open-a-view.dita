@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faq PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"  "faq.dtd">
+<faq id="faq-test">
+<question>How do I open a view?</question>
+ <answer>
+    <p>To open a view, click <menucascade>
+        <uicontrol>Window</uicontrol>
+        <uicontrol>Show View</uicontrol>
+        <uicontrol><varname>view_name</varname></uicontrol>
+      </menucascade></p>
+    <p>where <varname>view_name</varname> is one of the following items:</p>
+    <ul id="ul_wgg_c5x_5x">
+      <li>Bird's Eye View</li>
+      <li>DITA Topic File Manager</li>
+      <li>Method Exponent</li>
+      <li>Navigator</li>
+      <li>Outline</li>
+      <li>Properties</li>
+      <li>Properties Table</li>
+      <li>Property Visualization</li>
+      <li>Relationship Rows Browser</li>
+      <li>Relationship Table Editor</li>
+    </ul>
+  </answer>
+</faq>

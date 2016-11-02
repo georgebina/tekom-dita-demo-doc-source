@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+    
+    <public publicId="-//EXAMPLE//ENTITIES DITA FAQ//EN"
+        uri="dtd/faq.ent"/>
+    <public publicId="-//EXAMPLE//ELEMENTS DITA FAQ//EN"
+        uri="dtd/faq.mod"/>
+    <public publicId="-//EXAMPLE//DTD DITA FAQ//EN"
+        uri="dtd/faq.dtd"/>
+    <public publicId="-//EXAMPLE//DTD DITA 1.0 FAQ//EN"
+        uri="dtd/faq.dtd"/>
+    
+</catalog>
+

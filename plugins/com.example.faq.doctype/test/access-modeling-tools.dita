@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faq PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"  "faq.dtd">
+<faq id="faq-test">
+<question>How do I access the modeling tools?</question>
+ <answer>
+  <p>To open the <keyword keyref="hawkvision-product"/>  perspective, perform the following
+      steps:</p>
+  <ol id="ol_evb_htx_5x">
+   <li>Click <menucascade>
+     <uicontrol>Window</uicontrol>
+     <uicontrol>Open Perspective</uicontrol>
+     <uicontrol>Other</uicontrol>
+    </menucascade>.</li>
+   <li>Click <uicontrol>HawkVision Modeling</uicontrol>, and then click
+    <uicontrol>OK</uicontrol>.</li>
+  </ol>
+ </answer>
+</faq>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA FAQ DTD                                      -->
+<!--  VERSION:   1.0                                               -->
+<!--  DATE:      May 2013                                          -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"
+      Delivered as file "faq.dtd"                                  -->
+
+<!-- The public ID above refers to the latest version of this DTD.
+     To refer to this specific version, you may use this value:
+PUBLIC "-//EXAMPLE//DTD DITA 1.0 FAQ//EN"                         -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    DTD to describe Example FAQ                      -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             May 2013                                          -->
+<!--                                                               -->
+<!--             (C) Copyright Eberlein Consulting 2013.           -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    TOPIC ENTITY DECLARATIONS                  -->
+<!-- ============================================================= -->
+
+<!ENTITY % faq-dec     
+  PUBLIC "-//EXAMPLE//ENTITIES DITA FAQ//EN" 
+         "faq.ent"
+>%faq-dec;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATIONS                 -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % hi-d-dec     
+  PUBLIC "-//OASIS//ENTITIES DITA 1.2 Highlight Domain//EN" 
+         "highlightDomain.ent"
+>%hi-d-dec;
+
+<!ENTITY % sw-d-dec     
+  PUBLIC "-//OASIS//ENTITIES DITA 1.2 Software Domain//EN" 
+         "softwareDomain.ent"                                                 
+>%sw-d-dec;
+
+<!ENTITY % ui-d-dec     
+  PUBLIC "-//OASIS//ENTITIES DITA 1.2 User Interface Domain//EN" 
+         "uiDomain.ent"                                                       
+>%ui-d-dec;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE DECLARATIONS              -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN EXTENSIONS                          -->
+<!-- ============================================================= -->
+<!--                    One for each extended base element, with
+                        the name of the domain(s) in which the
+                        extension was declared                     -->
+
+<!ENTITY % pre          "pre |
+                         %sw-d-pre;|
+                         %ui-d-pre;
+                        ">
+<!ENTITY % keyword      "keyword | 
+                         %sw-d-keyword; |
+                         %ui-d-keyword;
+                        ">
+<!ENTITY % ph           "ph |
+                         %hi-d-ph; |
+                         %sw-d-ph; | 
+                         %ui-d-ph;
+                        ">
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE EXTENSIONS                -->
+<!-- ============================================================= -->
+<!ENTITY % props-attribute-extensions  ""                            >
+<!ENTITY % base-attribute-extensions   ""                            >
+
+
+<!-- ============================================================= -->
+<!--                    TOPIC NESTING OVERRIDE                     -->
+<!-- ============================================================= -->
+
+<!--                    Redefine the infotype entity to exclude 
+                        other topic types and disallow nesting     -->
+<!ENTITY % faq-info-types 
+                        "no-topic-nesting"                           >
+
+
+<!-- ============================================================= -->
+<!--                    DOMAINS ATTRIBUTE OVERRIDE                 -->
+<!-- ============================================================= -->
+<!--                    Must be declared ahead of the DTDs, which
+                        puts @domains first in order               -->
+
+<!ENTITY included-domains 
+                          "&faq-att;
+                           &hi-d-att; 
+                           &sw-d-att;
+                           &ui-d-att; 
+  "
+>
+
+
+<!-- ============================================================= -->
+<!--                    TOPIC ELEMENT INTEGRATION                  -->
+<!-- ============================================================= -->
+
+<!--                    Embed topic to get generic elements        -->
+<!ENTITY % topic-type   PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.2 Topic//EN" 
+"../../base/dtd/topic.mod">
+%topic-type;
+
+
+<!--                    Embed concept to get specific elements     -->
+<!ENTITY % concept-typemod 
+                        PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.2 Concept//EN" 
+"concept.mod">
+%concept-typemod;
+
+<!ENTITY %  faq-typemod PUBLIC
+"--//EXAMPLE//ELEMENTS DITA FAQ//EN"
+"faq.mod">
+%faq-typemod;
+
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ELEMENT INTEGRATION                 -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % hi-d-def     
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.2 Highlight Domain//EN" 
+         "../../base/dtd/highlightDomain.mod"
+>%hi-d-def;
+
+<!--<!ENTITY % indexing-d-def     
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.2 Indexing Domain//EN" 
+         "../../base/dtd/indexingDomain.mod"
+>%indexing-d-def;-->
+
+<!ENTITY % ui-d-def     
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.2 User Interface Domain//EN" 
+         "uiDomain.mod"
+>%ui-d-def;
+
+<!ENTITY % sw-d-def     
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.2 Software Domain//EN" 
+         "softwareDomain.mod"
+>%sw-d-def;
+
+<!-- ================== End Example FAQ DTD  ==================== -->

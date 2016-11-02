@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faq PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"  "faq.dtd">
+<faq id="faq-test">
+<question>How do I make the visualization less distracting?</question>
+ <answer>
+  <p>There are squiggly lines all over the model. It is distracting.</p>
+  <p>You can either turn off visualization or specify only the visualization properties that you
+   want to use.</p>
+  <p>To turn off the visualization, click <menucascade>
+    <uicontrol>View</uicontrol>
+    <uicontrol>Hide All Visualization</uicontrol>
+   </menucascade>.</p>
+  <p>To specify visualization, use the Property Visualization view.</p>
+ </answer>
+</faq>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA FAQ Entity                                   -->
+<!--  VERSION:   1.0                                               -->
+<!--  DATE:      May 2013                                          -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//EXAMPLE//ENTITIES DITA FAQ//EN"
+      Delivered as file "faq.ent"                                  -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the domain entity for FAQ topics        -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             May 2013                                          -->
+<!--                                                               -->
+<!--             (C) Copyright Eberlein Consulting 2013.           -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    FAQ ENTITIES                               -->
+<!-- ============================================================= -->
+
+<!ENTITY faq-att     
+  "(topic concept faq)"
+>
+
+
+<!-- =================== End FAQ Entities ======================== -->

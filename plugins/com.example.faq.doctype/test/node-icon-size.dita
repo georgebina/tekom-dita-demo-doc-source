@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faq PUBLIC "-//EXAMPLE//DTD DITA FAQ//EN"  "faq.dtd">
+<faq id="faq-test">
+<question>How do I change the size of the node icons?</question>
+ <answer>
+  <p>To decrease the node size, press <uicontrol>Ctrl+[</uicontrol>.</p>
+  <p>To increase the node size, press <uicontrol>Ctrl+]</uicontrol>.</p>
+ </answer>
+</faq>
