@@ -1,0 +1,22 @@
+//List of files which are indexed.
+fl = new Array();
+fl["0"]= "FAQ.html";
+fl["1"]= "c_architecture_combined.html";
+fl["2"]= "c_cluster_capacity.html";
+fl["3"]= "c_mv_about_guide.html";
+fl["4"]= "c_mv_about_mobileview.html";
+fl["5"]= "c_mv_customize_views.html";
+fl["6"]= "c_mv_diagnostics_tab.html";
+fl["7"]= "c_mv_managing_messages.html";
+fl["8"]= "c_mv_organization.html";
+fl["9"]= "c_mv_performance_tab.html";
+fl["10"]= "c_mv_workspace_tab.html";
+fl["11"]= "r_mv_query_filters.html";
+fl["12"]= "r_mv_query_messages.html";
+fl["13"]= "r_mv_quickref_dataview.html";
+fl["14"]= "r_mv_quickref_health_indicators.html";
+fl["15"]= "r_mv_system_notifications.html";
+fl["16"]= "t_mv_generating_data_views.html";
+fl["17"]= "t_mv_logging_on.html";
+fl["18"]= "t_mv_troubleshooting_clusters.html";
+var doStem = false;searchLoaded = true;

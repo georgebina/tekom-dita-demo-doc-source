@@ -1,0 +1,261 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2016" /><meta name="DC.rights.owner" content="(C) Copyright 2016" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="System diagnostics" /><meta name="abstract" content="View analysis of cluster status and performance. The data views will indicate whether active clusters are performing as expected or not." /><meta name="description" content="View analysis of cluster status and performance. The data views will indicate whether active clusters are performing as expected or not." /><meta name="indexterms" content=", system diagnostics tab" /><meta name="DC.subject" content=", MobileView, system diagnostics tab" /><meta name="keywords" content=", MobileView, system diagnostics tab" /><meta name="prodname" content="MobileView" /><meta name="version" content="1.1" /><meta name="release" content="GA" /><meta name="modification" content="b" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="concept_ud8_ak7_ws" /><meta name="DC.Language" content="en-us" /><title>System diagnostics</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" id="concept_ud8_ak7_ws">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">User Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="c_mv_about_mobileview.html">Introduction</a></span><ul><li class=" has-children "><span class="topicref"><a href="c_mv_about_mobileview.html" data-id="concept_y45_ca5_qk">About <dfn class="term">MobileView</dfn>  </a></span><ul><li><span class="topicref"><a href="c_mv_about_guide.html" data-id="concept_x69_dk0_al">About this guide</a></span></li><li><span class="topicref"><a href="c_mv_organization.html" data-id="concept_h38_hs3_nt">How <dfn class="term">MobileView</dfn> is organized</a></span></li></ul></li></ul></li><li class=" has-children "><span class="topicref"><a href="c_architecture_combined.html">Getting Started</a></span><ul><li><span class="topicref"><a href="c_architecture_combined.html" data-id="concept_m43_gl4_is"><dfn class="term">Thunderbird</dfn>  <dfn class="term">StormCluster</dfn> features and benefits</a></span></li><li><span class="topicref"><a href="t_mv_logging_on.html" data-id="task_n23_zp7_bw">Logging on to <dfn class="term">MobileView</dfn></a></span></li><li><span class="topicref"><a href="c_mv_workspace_tab.html" data-id="concept_v63_tg8_sx">Workspace environment</a></span></li><li><span class="topicref"><a href="c_mv_performance_tab.html" data-id="concept_g28_vp3_mv">System performance</a></span></li><li><span class="topicref"><a href="c_mv_diagnostics_tab.html" data-id="concept_ud8_ak7_ws">System diagnostics</a></span></li><li><span class="topicref"><a href="FAQ.html" data-id="mobileview_FAQ">Frequently Asked Questions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="c_mv_managing_messages.html">Common Tasks</a></span><ul><li><span class="topicref"><a href="c_mv_managing_messages.html" data-id="concept_tg1_yk6_cv">Messaging Overview</a></span></li><li class=" has-children "><span class="topicref"><a href="c_mv_customize_views.html" data-id="concept_ks5_dr3_bu">Customize Views</a></span><ul><li><span class="topicref"><a href="c_cluster_capacity.html" data-id="concept_e28_es5_wq">Cluster capacity reports</a></span></li><li><span class="topicref"><a href="t_mv_generating_data_views.html" data-id="task_k45_xs1_jw">Generating data views</a></span></li><li><span class="topicref"><a href="r_mv_query_filters.html" data-id="reference_b48_db6_fl">Query filters</a></span></li></ul></li><li><span class="topicref"><a href="t_mv_troubleshooting_clusters.html" data-id="task_d83_hj9_tr">Troubleshooting cluster reporting problems</a></span></li><li><span class="topicref"><a href="r_mv_query_messages.html" data-id="reference_y47_jq8_ct">Query warning messages</a></span></li><li><span class="topicref"><a href="r_mv_system_notifications.html" data-id="reference_g78_wh3_fr">System notifications</a></span></li><li><span class="topicref"><a href="r_mv_quickref_dataview.html" data-id="reference_l82_dt9_ed">Quick reference: data views</a></span></li><li><span class="topicref"><a href="r_mv_quickref_health_indicators.html" data-id="reference_v38_gq7_fy">Quick reference: System health indicators</a></span></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref"><a href="c_architecture_combined.html">Getting Started</a></span></li><li class="active"><span class="topicref">System diagnostics</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+ <h1 style="display:table; width:100%;" class="title topictitle1" id="ariaid-title1"><div class="edit-link-container" style="display: table-cell; margin-top: 0;">System diagnostics</div><span class="edit-link" style="font-size: 12px; opacity: 0.6; display: table-cell; text-align: right; vertical-align: middle"><a target="_blank" href="https://github.com/georgebina/tekom-dita-demo-doc-source/commits/oxygen/Thunderbird_Basic/c_mv_diagnostics_tab.dita">History</a> | <a target="_blank" href="https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html?url=github%3A%2F%2FgetFileContent%2Fgeorgebina%2Ftekom-dita-demo-doc-source%2Foxygen%2FThunderbird_Basic%2Fc_mv_diagnostics_tab.dita&amp;ditamap=github%3A%2F%2FgetFileContent%2Fgeorgebina%2Ftekom-dita-demo-doc-source%2Foxygen%2FThunderbird_Basic%2FUser_Guide.ditamap">Edit</a></span></h1>
+
+ 
+ 
+ <div class="body conbody"><p class="shortdesc">View analysis of cluster status and performance. The data views will indicate whether
+  active clusters are performing as expected or not.</p>
+
+  <p class="p">The <span class="ph uicontrol">Troubleshooting</span> sub-tab provides a data view for cluster modules
+      actively engaged with your project's tasks. The data views provide details regarding the
+      current status and projected performance of the cluster modules.</p>
+
+  <figure class="fig fignone" id="concept_ud8_ak7_ws__fig_jgg_sgm_mr"><p class="figcap"><span class="figtitleprefix">Figure: </span><dfn class="term">MobileView</dfn> System
+                    Support Tab: Troubleshooting</p>
+                
+                <img class="image" id="concept_ud8_ak7_ws__d18e151" src="Images/ThunderBird-Troubleshooting-sm.png" />
+            </figure>
+
+    <div class="p">The System Diagnostic troubleshooting agent will run a series of interactive tests to
+      identify and isolate problems within the <dfn class="term">StormCluster</dfn> grid. A typical interaction
+      would proceed as follows:<ul class="ul" id="concept_ud8_ak7_ws__ul_ht4_jns_mr">
+        <li class="li">User selects the <span class="ph uicontrol">Troubleshooting Scenario</span> that best fits the
+          observed situation.</li>
+
+        <li class="li">A series of tests will run, with results either being captured and displayed
+          automatically or being observed and entered by the user.</li>
+
+        <li class="li">The result from one test may lead to one or more additional tests being run.</li>
+
+        <li class="li">One or more problems will be identified, isolated, and confirmed by the tests.</li>
+
+        <li class="li">One or more resolution measures will be identified.</li>
+
+        <li class="li">Resolution measures will include references to the applicable task documentation.  </li>
+
+      </ul>
+
+    </div>
+
+   
+  <p class="p" id="concept_ud8_ak7_ws__p_pl5_x5m_mr">For each cluster module, a data view presents a graph depicting the clusters
+      progress. Three different health indicators signal the current or future processing status:
+    </p>
+
+    
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="concept_ud8_ak7_ws__table_zfs_2ms_mr" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap"><span class="table--title-label">Table 1. </span>System health indicators</span></caption><colgroup><col style="width:34.64052287581699%" /><col style="width:32.6797385620915%" /><col style="width:32.6797385620915%" /></colgroup><thead class="thead" style="text-align:left;">
+						<tr>
+							<th class="entry nocellnorowborder" style="vertical-align:top;" id="d1778e112">
+								<p class="p">Indicator</p>
+
+							</th>
+
+							<th class="entry nocellnorowborder" style="vertical-align:top;" id="d1778e118">
+								<p class="p">Status</p>
+
+							</th>
+
+							<th class="entry cell-norowborder" style="vertical-align:top;" id="d1778e124">
+								<p class="p">Description</p>
+
+							</th>
+
+						</tr>
+
+					</thead>
+<tbody class="tbody">
+						<tr>
+							<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d1778e112 ">
+								<p class="p"><img class="image" id="concept_ud8_ak7_ws__image_tbr_qms_mr" src="Images/operational_icon.png" /></p>
+
+							</td>
+
+							<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d1778e118 ">
+								<p class="p">Healthy</p>
+
+							</td>
+
+							<td class="entry cell-norowborder" style="vertical-align:top;" headers="d1778e124 ">
+								<p class="p">Indicates regular and sustained cluster performance.</p>
+
+							</td>
+
+						</tr>
+
+						<tr>
+							<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d1778e112 ">
+								<p class="p"><img class="image" id="concept_ud8_ak7_ws__image_t3f_rms_mr" src="Images/warning_icon.png" /></p>
+
+							</td>
+
+							<td class="entry nocellnorowborder" style="vertical-align:top;" headers="d1778e118 ">
+								<p class="p">Warning</p>
+
+							</td>
+
+							<td class="entry cell-norowborder" style="vertical-align:top;" headers="d1778e124 ">
+								<p class="p">Indicates that the cluster is not performing optimally or cannot
+									address projected workloads.</p>
+
+							</td>
+
+						</tr>
+
+						<tr>
+							<td class="entry row-nocellborder" style="vertical-align:top;" headers="d1778e112 ">
+								<p class="p"><img class="image" id="concept_ud8_ak7_ws__image_l2t_rms_mr" src="Images/error_icon.png" /></p>
+
+							</td>
+
+							<td class="entry row-nocellborder" style="vertical-align:top;" headers="d1778e118 ">
+								<p class="p">Error</p>
+
+							</td>
+
+							<td class="entry cellrowborder" style="vertical-align:top;" headers="d1778e124 ">
+								<p class="p">Indicates that the cluster has stopped processing a task.</p>
+
+							</td>
+
+						</tr>
+
+					</tbody>
+</table>
+</div>
+
+   
+  <p class="p">If the cluster has stopped processing a task, it is not performing optimally, or it cannot address projected workloads, you will also receive a notification message alerting you to the problem. Visit the <span class="ph uicontrol">Diagnostics Tab</span> to see additional information on the issue, select actions to amend the situation, and monitor the impact of your intervention.</p>
+
+   </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="c_architecture_combined.html">Getting Started</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="c_architecture_combined.html">Thunderbird  StormCluster features and benefits</a></span></li><li><span class="topicref"><a href="t_mv_logging_on.html">Logging on to MobileView</a></span></li><li><span class="topicref"><a href="c_mv_workspace_tab.html">Workspace environment</a></span></li><li><span class="topicref"><a href="c_mv_performance_tab.html">System performance</a></span></li><li class="active"><span class="topicref">System diagnostics</span></li><li><span class="topicref"><a href="FAQ.html">Frequently Asked Questions</a></span></li></ul></li></ul></div>
+                    </nav>
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    WebHelp output generated by <a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"> &lt;oXygen/&gt; XML Author </a>
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>
