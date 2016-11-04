@@ -15,7 +15,7 @@ rev=$(git rev-parse --short HEAD)
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
 USERNAME=`basename $PARENTDIR`
-cd out/wiki
+cd out
 
 git init
 git config user.name "oXygen XML Deployer"
