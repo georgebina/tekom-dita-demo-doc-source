@@ -1,0 +1,16 @@
+language: xslt
+install:
+- echo "Installed"
+script:
+- sh .travis/publish.sh
+after_success:
+- sh .travis/deploy.sh
+env:
+  global:
+  - MAP="Thunderbird_Basic/User_Guide.ditamap"
+  - TITLE="Thunderbird User Guide"
+  - WELCOME="Welcome to Thunderbird!"
+  - SKIN="aquamarine"
+notifications:
+  email:
+    on_success: always
