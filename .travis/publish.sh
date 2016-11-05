@@ -75,7 +75,7 @@ export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.template.name=bootstrap"
 export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.variant.name=tiles"
 export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.skin.name=$SKIN"
 
-dita-ot-2.3.3/bin/dita -i $MAP -f webhelp-responsive -o out/$TRAVIS_BRANCH
+dita-ot-2.3.3/bin/dita -i $MAP -f webhelp-responsive -o out
 echo "====================================="
 echo "index.html"
 echo "====================================="
