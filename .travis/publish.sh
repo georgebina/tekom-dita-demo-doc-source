@@ -79,4 +79,4 @@ dita-ot-2.3.3/bin/dita -i $MAP -f webhelp-responsive -o out
 echo "====================================="
 echo "index.html"
 echo "====================================="
-cat out/$TRAVIS_BRANCH/index.html
+cat out/index.html
