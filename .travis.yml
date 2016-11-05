@@ -10,7 +10,7 @@ env:
   - MAP="Thunderbird_Basic/User_Guide.ditamap"
   - TITLE="Thunderbird User Guide"
   - WELCOME="Welcome to Thunderbird!"
-  - SKIN="aquamarine"
+  - SKIN="oxygen"
 notifications:
   email:
     on_success: always
