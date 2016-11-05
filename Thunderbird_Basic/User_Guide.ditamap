@@ -15,12 +15,20 @@
       format="dita"/>   
   </topicgroup>
   <topichead navtitle="Introduction">
+      <topicmeta>
+          <shortdesc>Discover what <term conkeyref="r_productname_variables/ph_companyname"/>
+                <term conkeyref="r_productname_variables/ph_prodname"/> is.</shortdesc>
+      </topicmeta>
         <topicref href="c_mv_about_mobileview.dita">
             <topicref href="c_mv_about_guide.dita"/>
             <topicref href="c_mv_organization.dita"/>
         </topicref>
     </topichead>
     <topichead navtitle="Getting Started">
+        <topicmeta>
+            <shortdesc>Just what you need to start using <term
+                    conkeyref="r_productname_variables/ph_companyname"/></shortdesc>
+        </topicmeta>
         <topicref href="c_architecture_combined.dita"/>
         <topicref href="t_mv_logging_on.dita"/>
         <topicref href="c_mv_workspace_tab.dita"/>
@@ -29,6 +37,9 @@
         <topicref href="FAQ.dita"/>
     </topichead>
     <topichead navtitle="Common Tasks">
+        <topicmeta>
+            <shortdesc>Your daily tasks explained!</shortdesc>
+        </topicmeta>
         <topicref href="c_mv_managing_messages.dita"/>
         <topicref href="c_mv_customize_views.dita">
             <topicref href="c_cluster_capacity.dita"/>
