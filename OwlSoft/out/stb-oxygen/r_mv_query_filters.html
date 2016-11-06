@@ -1,0 +1,777 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Query filters" /><meta name="abstract" content="Before generating a data view, you must filter your query. This section lists the query filters available for each analysis. This list is organized alphabetically by query filter." /><meta name="description" content="Before generating a data view, you must filter your query. This section lists the query filters available for each analysis. This list is organized alphabetically by query filter." /><meta name="indexterms" content=", query filters" /><meta name="DC.subject" content=", Monitor, query filters" /><meta name="keywords" content=", Monitor, query filters" /><meta name="DC.Relation" scheme="URI" content="c_mv_customize_views.html" /><meta name="prodname" content="Monitor" /><meta name="version" content="1.1" /><meta name="release" content="GA" /><meta name="modification" content="b" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_b48_db6_fl" /><meta name="DC.Language" content="en-us" /><title>Query filters</title><!--  Generated with Oxygen version @@WEBHELP_VERSION@@, build number @@WEBHELP_BUILD_NUMBER@@.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" id="reference_b48_db6_fl">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">User Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="c_mv_about_mobileview.html">Introduction</a></span><ul><li class=" has-children "><span class="topicref"><a href="c_mv_about_mobileview.html" data-id="concept_y45_ca5_qk">About <dfn class="term">Dashboard</dfn>  </a></span><ul><li><span class="topicref"><a href="c_mv_about_guide.html" data-id="concept_x69_dk0_al">About this guide</a></span></li><li><span class="topicref"><a href="c_mv_organization.html" data-id="concept_h38_hs3_nt">How <dfn class="term">Dashboard</dfn> is organized</a></span></li></ul></li></ul></li><li class=" has-children "><span class="topicref"><a href="c_architecture_combined.html">Getting Started</a></span><ul><li><span class="topicref"><a href="c_architecture_combined.html" data-id="concept_m43_gl4_is"><dfn class="term">Alfresco</dfn>  <dfn class="term">EnterpriseCMS</dfn> features and benefits</a></span></li><li><span class="topicref"><a href="t_mv_logging_on.html" data-id="task_n23_zp7_bw">Logging on to <dfn class="term">Dashboard</dfn></a></span></li><li><span class="topicref"><a href="c_mv_workspace_tab.html" data-id="concept_v63_tg8_sx">Workspace environment</a></span></li><li><span class="topicref"><a href="c_mv_performance_tab.html" data-id="concept_g28_vp3_mv">System performance</a></span></li><li><span class="topicref"><a href="c_mv_diagnostics_tab.html" data-id="concept_ud8_ak7_ws">System diagnostics</a></span></li><li><span class="topicref"><a href="FAQ.html" data-id="mobileview_FAQ">Frequently Asked Questions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="c_mv_managing_messages.html">Common Tasks</a></span><ul><li><span class="topicref"><a href="c_mv_managing_messages.html" data-id="concept_tg1_yk6_cv">Messaging Overview</a></span></li><li class=" has-children "><span class="topicref"><a href="c_mv_customize_views.html" data-id="concept_ks5_dr3_bu">Customize Views</a></span><ul><li><span class="topicref"><a href="c_cluster_capacity.html" data-id="concept_e28_es5_wq">Cluster capacity reports</a></span></li><li><span class="topicref"><a href="t_mv_generating_data_views.html" data-id="task_k45_xs1_jw">Generating data views</a></span></li><li><span class="topicref"><a href="r_mv_query_filters.html" data-id="reference_b48_db6_fl">Query filters</a></span></li></ul></li><li><span class="topicref"><a href="t_mv_troubleshooting_clusters.html" data-id="task_d83_hj9_tr">Troubleshooting cluster reporting problems</a></span></li><li><span class="topicref"><a href="r_mv_query_messages.html" data-id="reference_y47_jq8_ct">Query warning messages</a></span></li><li><span class="topicref"><a href="r_mv_system_notifications.html" data-id="reference_g78_wh3_fr">System notifications</a></span></li><li><span class="topicref"><a href="r_mv_quickref_dataview.html" data-id="reference_l82_dt9_ed">Quick reference: data views</a></span></li><li><span class="topicref"><a href="r_mv_quickref_health_indicators.html" data-id="reference_v38_gq7_fy">Quick reference: System health indicators</a></span></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref"><a href="c_mv_managing_messages.html">Common Tasks</a></span></li><li><span class="topicref"><a href="c_mv_customize_views.html">Customize Views</a></span></li><li class="active"><span class="topicref">Query filters</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Query filters</h1>
+
+    
+    
+    <div class="body refbody"><p class="shortdesc">Before generating a data view, you must filter your query. This section lists the query
+        filters available for each analysis. This list is organized alphabetically by query
+        filter.</p>
+
+        <div class="section">
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" frame="hsides" border="1" rules="all">
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="24.675324675324674%" id="d3724e60">Query filter</th>
+
+                            <th class="entry" valign="top" width="29.87012987012987%" id="d3724e63">Associated reports</th>
+
+                            <th class="entry" valign="top" width="45.45454545454545%" id="d3724e66">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Access rule</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Access rule configuration</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the access rule to investigate.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Acknowledged by</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Users who acknowledged the alarm.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Acknowledged on</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Alarm acknowledgement time range.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Action taken</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Hits</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">User hit actions (Monitor, Diagnose, Clear).</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Acknowledgement type</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Check one of the following acknowledgement type options: <dl class="dl">
+                                    
+                                        <dt class="dt dlterm">Alternate</dt>
+
+                                        <dd class="dd">Alarm was acknowledged by a user using the alternate
+                                            mode.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm">Default</dt>
+
+                                        <dd class="dd">Alarm was acknowledged by a user, or auto-acknowledged
+                                            by the system.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm">Forcibly</dt>
+
+                                        <dd class="dd">An administrator forced the alarm to be
+                                            acknowledged.</dd>
+
+                                    
+                                </dl>
+</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Alarm priority</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Alarm priority.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Alarms</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                             <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the types of alarms you want to investigate.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Application</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Activity trails</li>
+
+                                    <li class="li">Audit trails</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Which client application was used for the activity.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Archiver</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Archiver events</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the Archivers to investigate.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Clusters</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Cluster activities</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the clusters to investigate.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Compare with</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Inventory report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Compare entities with a source entity of the event.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Creation time</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Incidents</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Incidents created/reported within the specified time
+                                range.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Credential</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Credential management</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Specify whether or not the credential is assigned.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Custom fields</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Most reports</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">If custom fields are defined for the entity you are
+                                investigating, they can be included in this report.<div class="note note"><span class="notetitle">Note:</span> You might
+                                    not see the custom fields filter, depending on whether your user
+                                    is configured to view that custom field.</div>
+</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Description</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Activity trails</li>
+
+                                    <li class="li">Credential management</li>
+
+                                </ul>
+
+                            </td>
+
+                             <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Restrict the search to entries that contain this text
+                                string.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Devices</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">IO configuration</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the devices to investigate.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Entities</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Audit trails</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the entities you want to investigate. You can filter the
+                                entities by name and by type. </td>
+
+                        </tr>
+
+                    
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Health event</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Health history</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Name of the health event.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Health severity</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Health history</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Severity level of the health event.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Hit rules</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Hits</li>
+
+                                    <li class="li">Reads</li>
+
+                                 </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the hit rules to include in the report.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Hit type</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Hits</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the type of hits to include in the report.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Impacted</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Activity trails</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">The entities that were impacted by this activity.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Incident time</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Incidents</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Incidents reported within the specified time range. The incident
+                                time corresponds to the event or alarm timestamp the incident refers
+                                to. If the incident does not refer to any event or alarm, then the
+                                incident time corresponds to the creation time.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Initiator</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Activity trails</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">User responsible for the activity.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Investigated by</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Which user put the alarm into the <em class="ph i">under investigation</em>
+                                state.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Investigated on</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Specify a time range when the alarm was put into the <em class="ph i">under
+                                    investigation</em> state.</td>
+
+                        </tr>
+
+                       
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Machine</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Health history</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select a computer that was having health issues to investigate.
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Modified by</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Audit trails</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">User responsible for the entity modification.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Modification time</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Audit trails</li>
+
+                                    <li class="li">Incidents</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">
+                                <dl class="dl">
+                                    
+                                        <dt class="dt dlterm"><em class="ph i">Audit trails</em> task</dt>
+
+                                        <dd class="dd">Entities modified within the specified time range.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm"><em class="ph i">Incidents</em> task</dt>
+
+                                        <dd class="dd">Incidents modified within the specified time range.</dd>
+
+                                    
+                                </dl>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Notes</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Incidents</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Enter text to find incidents with a description starting or
+                                containing the specified text.</td>
+
+                        </tr>
+
+                         <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">State</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                           <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Current state of the alarm.<dl class="dl">
+                                    
+                                        <dt class="dt dlterm">Active</dt>
+
+                                        <dd class="dd">Alarm is not yet acknowledged. Selecting an active alarm
+                                            shows the alarm acknowledge buttons in the report
+                                            pane.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm">Acknowledged</dt>
+
+                                        <dd class="dd">Alarm was acknowledged by a user, or auto-acknowledged
+                                            by the system.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm">Under investigation</dt>
+
+                                        <dd class="dd">Alarm with an acknowledgement condition that is still
+                                            active was put under investigation.</dd>
+
+                                    
+                                    
+                                        <dt class="dt dlterm">Acknowledgement required</dt>
+
+                                        <dd class="dd">Alarm with an acknowledgement condition that was cleared
+                                            is ready to be acknowledged.</dd>
+
+                                    
+                                </dl>
+</td>
+
+                        </tr>
+
+                       <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Triggered on</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Alarm trigger time
+                                range.</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Triggering event</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Alarm report</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Events used to trigger the alarm.</td>
+
+                        </tr>
+
+                       <tr>
+                            <td class="entry" valign="top" width="24.675324675324674%" headers="d3724e60 "><span class="ph uicontrol">Users</span></td>
+
+                            <td class="entry" valign="top" width="29.87012987012987%" headers="d3724e63 ">
+                                <ul class="ul">
+                                    <li class="li">Hits</li>
+
+                                    <li class="li">Reads</li>
+
+                                </ul>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="45.45454545454545%" headers="d3724e66 ">Select the user name.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+    </div>
+
+
+</div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="c_mv_managing_messages.html">Common Tasks</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="c_mv_managing_messages.html">Messaging Overview</a></span></li><li><span class="topicref"><a href="c_mv_customize_views.html">Customize Views</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="c_cluster_capacity.html">Cluster capacity reports</a></span></li><li><span class="topicref"><a href="t_mv_generating_data_views.html">Generating data views</a></span></li><li class="active"><span class="topicref">Query filters</span></li></ul></li><li><span class="topicref"><a href="t_mv_troubleshooting_clusters.html">Troubleshooting cluster reporting problems</a></span></li><li><span class="topicref"><a href="r_mv_query_messages.html">Query warning messages</a></span></li><li><span class="topicref"><a href="r_mv_system_notifications.html">System notifications</a></span></li><li><span class="topicref"><a href="r_mv_quickref_dataview.html">Quick reference: data views</a></span></li><li><span class="topicref"><a href="r_mv_quickref_health_indicators.html">Quick reference: System health indicators</a></span></li></ul></li></ul></div>
+                    </nav>
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    WebHelp output generated by <a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"> &lt;oXygen/&gt; XML Author </a>
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>
