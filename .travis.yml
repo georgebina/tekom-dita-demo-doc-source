@@ -8,8 +8,8 @@ after_success:
 env:
   global:
   - MAP="OwlSoft/User_Guide.ditamap"
-  - TITLE="OwlSoft StormCluster User Guide"
-  - WELCOME="Welcome to StormCluster by OwlSoft!"
+  - TITLE="StormCluster User Guide"
+  - WELCOME="Welcome to StormCluster!"
   - SKIN="oxygen"
 notifications:
   email:

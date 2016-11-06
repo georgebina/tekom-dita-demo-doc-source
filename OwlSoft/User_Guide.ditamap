@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
-    <title><term conkeyref="r_productname_variables/ph_prodname"/> User Guide by <term
-            conkeyref="r_productname_variables/ph_companyname"/></title>
+    <title><term conkeyref="r_productname_variables/ph_prodname"/> User Guide</title>
   <topicgroup processing-role="resource-only">
     <keydef keys="r_productname_variables" href="r_productname_variables.dita" type="topic"
       format="dita"/>    
