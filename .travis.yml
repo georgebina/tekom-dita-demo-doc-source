@@ -10,7 +10,7 @@ env:
   - MAP="OwlSoft/User_Guide.ditamap"
   - TITLE="StormCluster User Guide"
   - WELCOME="Welcome to StormCluster!"
-  - SKIN="oxygen"
+  - SKIN="aquamarine"
 notifications:
   email:
     on_success: always
