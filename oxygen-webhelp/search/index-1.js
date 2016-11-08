@@ -62,6 +62,7 @@ w["access"]="10*4,11*2";
 w["accessed"]="10*0";
 w["according"]="8*26,10*0";
 w["account"]="0*1,10*6,16*0,17*0";
+w["ace"]="1*0";
 w["acknowledge"]="7*1,11*0";
 w["acknowledged"]="11*11";
 w["acknowledgement"]="11*5";
