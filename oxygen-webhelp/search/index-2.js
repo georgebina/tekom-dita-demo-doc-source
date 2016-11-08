@@ -1,5 +1,6 @@
 
 // Auto generated index for searching.
+w["even"]="1*0";
 w["event"]="9*0,11*6";
 w["events"]="10*0,11*1";
 w["examples"]="12*0";
@@ -10,7 +11,7 @@ w["explains"]="3*0";
 w["export"]="5*2,16*0";
 w["extensibility"]="1*0";
 w["extensions"]="15*0";
-w["extreme"]="1*0";
+w["extr"]="1*0";
 w["facilitate"]="9*0";
 w["failed"]="15*0";
 w["features"]="1*39";
@@ -117,8 +118,7 @@ w["intelligent"]="1*0";
 w["interact"]="10*0";
 w["interaction"]="6*0";
 w["interactive"]="6*0";
-w["interf"]="1*0";
-w["interface"]="4*0";
+w["interface"]="1*0,4*0";
 w["intervention"]="6*0";
 w["introduction"]="4*40,7*9";
 w["intuitive"]="1*1";
