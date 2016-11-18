@@ -1,6 +1,6 @@
 fil = new Array();
 fil["0"]= "FAQ.html@@@Frequently Asked Questions@@@Answers to your frequently asked questions about MobileView...";
-fil["1"]= "c_architecture_combined.html@@@OwlSoft StormCluster features and benefits@@@StormCluster components work together to give you an advanced cluster management and reporting capabilities that you need within a large computing environment...";
+fil["1"]= "c_architecture_combined.html@@@OwlSoft StormCluster features and benefits@@@StormCluster components work together to give you an advanced cluster management and reporting capabilities that you need within a large computing environment. MODIFIED AT TEKOM!!!...";
 fil["2"]= "c_cluster_capacity.html@@@Cluster capacity reports@@@Reports the usage of all slots in the cluster...";
 fil["3"]= "c_mv_about_guide.html@@@About this guide@@@A brief description of notes and notices important for understanding this guide...";
 fil["4"]= "c_mv_about_mobileview.html@@@About MobileView@@@An overview of MobileView, the system operator application for StormCluster...";
